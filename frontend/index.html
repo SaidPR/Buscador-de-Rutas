@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buscador de Rutas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h2>Buscador de Rutas</h2>
+  <label>Origen:
+    <select id="origen">
+      <option value="zamora">Zamora</option>
+      <option value="jiquilpan">Jiquilpan</option>
+      <option value="vistaH">Vista Hermosa</option>
+      <option value="laPiedad">La Piedad</option>
+      <option value="chilchota">Chilchota</option>
+      <option value="sahuayo">Sahuayo</option>
+    </select>
+  </label>
+  <label>Destino:
+    <select id="destino">
+      <option value="zamora">Zamora</option>
+      <option value="jiquilpan">Jiquilpan</option>
+      <option value="vistaH">Vista Hermosa</option>
+      <option value="laPiedad">La Piedad</option>
+      <option value="chilchota">Chilchota</option>
+      <option value="sahuayo">Sahuayo</option>
+    </select>
+  </label>
+  <button onclick="buscarRutaCorta()">Buscar Ruta Más Corta</button>
+  <button onclick="buscarRutaRapida()">Buscar Ruta Más Rápida</button>
+
+  <h3>Ruta con Intereses (separar por comas):</h3>
+  <label>Intereses:
+    <input type="text" id="intereses" placeholder="ej: villamar,ixtlan">
+  </label>
+  <button onclick="buscarRutaConIntereses()">Buscar Ruta con Intereses</button>
+
+
+  <p id="resultado"></p>
+
+  <div id="map" style="height: 500px;"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
