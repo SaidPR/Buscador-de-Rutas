@@ -108,5 +108,5 @@ Este proyecto muestra el poder de la **programación lógica** para resolver pro
 
 ## 👤 Autor
 
-**Said Piñones Ramírez**  
+**Said Piñones Ramos**  
 Estudiante de Ingeniería en Sistemas Computacionales  
